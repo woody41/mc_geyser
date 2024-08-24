@@ -1,0 +1,107 @@
+[15:48:56.558 main/INFO] Loading extensions...
+[15:48:56.564 main/INFO] Loaded 0 extension(s)
+[15:48:56.635 main/INFO] ******************************************
+[15:48:56.635 main/INFO] 
+[15:48:56.636 main/INFO] Loading Geyser version 2.4.2-b652 (git-master-b792f72)
+[15:48:56.636 main/INFO] 
+[15:48:56.636 main/INFO] ******************************************
+[15:48:58.558 epollEventLoopGroup-3-2/INFO] Started Geyser on UDP port 19132
+[15:48:58.562 main/INFO] Done (1.926s)! Run /geyser help for help!
+[15:48:58.562 main/WARN] Geyser doesn't translate Bedrock movements perfectly! Using Geyser in servers that have an anticheat could get you banned.
+[15:50:18.371 epollEventLoopGroup-4-1/INFO] Player connected with username Filipous5
+[15:52:38.678 ForkJoinPool.commonPool-worker-3/ERROR] Failed to log in with Microsoft code!
+java.util.concurrent.CompletionException: java.util.concurrent.TimeoutException: Failed to get MSA Code. Login timed out
+	at org.geysermc.geyser.session.PendingMicrosoftAuthentication$AuthenticationTask.lambda$performLoginAttempt$0(PendingMicrosoftAuthentication.java:133) ~[geyser.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
+Caused by: java.util.concurrent.TimeoutException: Failed to get MSA Code. Login timed out
+	at net.raphimc.minecraftauth.step.msa.StepMsaDeviceCodeMsaCode.execute(StepMsaDeviceCodeMsaCode.java:81) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.msa.StepMsaDeviceCodeMsaCode.execute(StepMsaDeviceCodeMsaCode.java:37) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.msa.StepMsaToken.getFromInput(StepMsaToken.java:68) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.msa.StepMsaToken.getFromInput(StepMsaToken.java:36) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.BiMergeStep.getFromInput(BiMergeStep.java:53) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.BiMergeStep.getFromInput(BiMergeStep.java:23) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.SameInputBiMergeStep.getFromInput(SameInputBiMergeStep.java:54) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.SameInputBiMergeStep.getFromInput(SameInputBiMergeStep.java:27) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.SameInputBiMergeStep.getFromInput(SameInputBiMergeStep.java:54) ~[geyser.jar:?]
+	at org.geysermc.geyser.session.PendingMicrosoftAuthentication$AuthenticationTask.lambda$performLoginAttempt$0(PendingMicrosoftAuthentication.java:131) ~[geyser.jar:?]
+	... 7 more
+[15:52:38.684 ForkJoinPool.commonPool-worker-3/INFO] Bedrock user with ip: /192.168.35.50 has disconnected for reason java.util.concurrent.CompletionException: java.util.concurrent.TimeoutException: Failed to get MSA Code. Login timed out
+[15:53:27.874 epollEventLoopGroup-4-2/INFO] Player connected with username Filipous5
+[15:54:48.759 ForkJoinPool.commonPool-worker-10/ERROR] Failed to log in with Microsoft code!
+java.util.concurrent.CompletionException: java.net.http.HttpTimeoutException: request timed out
+	at org.geysermc.geyser.session.PendingMicrosoftAuthentication$AuthenticationTask.lambda$performLoginAttempt$0(PendingMicrosoftAuthentication.java:133) ~[geyser.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
+Caused by: java.net.http.HttpTimeoutException: request timed out
+	at jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:949) ~[java.net.http:?]
+	at jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:?]
+	at net.lenni0451.commons.httpclient.executor.HttpClientExecutor.execute(HttpClientExecutor.java:48) ~[geyser.jar:?]
+	at net.lenni0451.commons.httpclient.HttpClient.execute(HttpClient.java:232) ~[geyser.jar:?]
+	at net.lenni0451.commons.httpclient.HttpClient.execute(HttpClient.java:213) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.msa.StepMsaDeviceCodeMsaCode.execute(StepMsaDeviceCodeMsaCode.java:61) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.msa.StepMsaDeviceCodeMsaCode.execute(StepMsaDeviceCodeMsaCode.java:37) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.msa.StepMsaToken.getFromInput(StepMsaToken.java:68) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.msa.StepMsaToken.getFromInput(StepMsaToken.java:36) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.BiMergeStep.getFromInput(BiMergeStep.java:53) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.BiMergeStep.getFromInput(BiMergeStep.java:23) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.SameInputBiMergeStep.getFromInput(SameInputBiMergeStep.java:54) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.SameInputBiMergeStep.getFromInput(SameInputBiMergeStep.java:27) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.SameInputBiMergeStep.getFromInput(SameInputBiMergeStep.java:54) ~[geyser.jar:?]
+	at org.geysermc.geyser.session.PendingMicrosoftAuthentication$AuthenticationTask.lambda$performLoginAttempt$0(PendingMicrosoftAuthentication.java:131) ~[geyser.jar:?]
+	... 7 more
+[15:54:48.760 ForkJoinPool.commonPool-worker-10/INFO] Bedrock user with ip: /192.168.35.50 has disconnected for reason java.util.concurrent.CompletionException: java.net.http.HttpTimeoutException: request timed out
+[15:55:22.695 epollEventLoopGroup-4-3/INFO] Player connected with username Filipous5
+[15:57:38.563 ForkJoinPool.commonPool-worker-10/ERROR] Failed to log in with Microsoft code!
+java.util.concurrent.CompletionException: java.util.concurrent.TimeoutException: Failed to get MSA Code. Login timed out
+	at org.geysermc.geyser.session.PendingMicrosoftAuthentication$AuthenticationTask.lambda$performLoginAttempt$0(PendingMicrosoftAuthentication.java:133) ~[geyser.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
+Caused by: java.util.concurrent.TimeoutException: Failed to get MSA Code. Login timed out
+	at net.raphimc.minecraftauth.step.msa.StepMsaDeviceCodeMsaCode.execute(StepMsaDeviceCodeMsaCode.java:81) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.msa.StepMsaDeviceCodeMsaCode.execute(StepMsaDeviceCodeMsaCode.java:37) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.msa.StepMsaToken.getFromInput(StepMsaToken.java:68) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.msa.StepMsaToken.getFromInput(StepMsaToken.java:36) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.BiMergeStep.getFromInput(BiMergeStep.java:53) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.BiMergeStep.getFromInput(BiMergeStep.java:23) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.SameInputBiMergeStep.getFromInput(SameInputBiMergeStep.java:54) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.SameInputBiMergeStep.getFromInput(SameInputBiMergeStep.java:27) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.AbstractStep.getFromInput(AbstractStep.java:77) ~[geyser.jar:?]
+	at net.raphimc.minecraftauth.step.SameInputBiMergeStep.getFromInput(SameInputBiMergeStep.java:54) ~[geyser.jar:?]
+	at org.geysermc.geyser.session.PendingMicrosoftAuthentication$AuthenticationTask.lambda$performLoginAttempt$0(PendingMicrosoftAuthentication.java:131) ~[geyser.jar:?]
+	... 7 more
+[15:57:38.564 ForkJoinPool.commonPool-worker-10/INFO] Bedrock user with ip: /192.168.35.50 has disconnected for reason java.util.concurrent.CompletionException: java.util.concurrent.TimeoutException: Failed to get MSA Code. Login timed out
+[16:02:29.915 epollEventLoopGroup-4-4/INFO] Player connected with username Filipous5
+[16:03:48.429 tcpClientSession-6-1/INFO] Filipous5 (logged in as: DelphyM) has connected to remote java server on address localhost
